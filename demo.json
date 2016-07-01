@@ -1,0 +1,45 @@
+{
+    "databaseChangeLog": [
+        {
+            "preConditions": [
+                {
+                    "runningAs": {
+                        "username": "liquibase"
+                    }
+                }
+            ]
+        },
+
+        {
+            "changeSet": {
+                "id": "1",
+                "author": "alice@example.com",
+                "changes": [
+                    {
+                        "createTable": {
+                            "tableName": "person",
+                            "columns": [
+                                {
+                                    "column": {
+                                        "name": "id",
+                                        "type": "int",
+                                        "autoIncrement": true,
+                                        "constraints": {
+                                            "primaryKey": true,
+                                            "nullable": false
+                                        },
+                                    }
+                                },
+                                {
+                                    "column": {
+                                        "name": "name",
+                                        "type": "varchar(100)"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+}
