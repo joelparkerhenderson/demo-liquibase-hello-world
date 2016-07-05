@@ -1,4 +1,4 @@
-# Demo Liquibase Hello WOrld
+# Demo Liquibase Hello World
 
 This is a demonstration of Liquibase using the simplest possible "Hello World" example.
 
